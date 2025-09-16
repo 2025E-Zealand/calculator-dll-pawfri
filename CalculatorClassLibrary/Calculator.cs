@@ -43,6 +43,10 @@ public class Calculator
     /// <returns>Returns the sum</returns>
     public int Divide(int x, int y)
     {  
+        if (x == 0 || y == 0)
+        {
+            return 0;
+        }
         return x / y; 
     }
 }
