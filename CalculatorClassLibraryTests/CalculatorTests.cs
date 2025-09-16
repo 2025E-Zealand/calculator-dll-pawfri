@@ -20,13 +20,13 @@ public class CalculatorTests
     public void AddTestEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int expected = 10;
 
         // Act
-        int result = calculator.Add(value, value2);
+        int result = Calculator.Add(value, value2);
 
         // Assert
-        Assert.AreEqual(result, 10);
+        Assert.AreEqual(expected, result);
     }
 
     [DataRow(0, 9)]
@@ -37,13 +37,13 @@ public class CalculatorTests
     public void AddTestNotEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int notExpected = 10;
 
         // Act
-        int result = calculator.Add(value, value2);
+        int result = Calculator.Add(value, value2);
 
         // Assert
-        Assert.AreNotEqual(result, 10);
+        Assert.AreNotEqual(notExpected, result);
     }
 
     [DataRow(20, 10)]
@@ -54,13 +54,13 @@ public class CalculatorTests
     public void SubtractTestEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int expected = 10;
 
         // Act
-        int result = calculator.Subtract(value, value2);
+        int result = Calculator.Subtract(value, value2);
 
         // Assert
-        Assert.AreEqual(result, 10);
+        Assert.AreEqual(expected, result);
     }
 
     [DataRow(20, 30)]
@@ -71,13 +71,13 @@ public class CalculatorTests
     public void SubtractTestNotEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int notExpected = 10;
 
         // Act
-        int result = calculator.Subtract(value, value2);
+        int result = Calculator.Subtract(value, value2);
 
         // Assert
-        Assert.AreNotEqual(result, 10);
+        Assert.AreNotEqual(notExpected, result);
     }
 
     [DataRow(10, 10)]
@@ -87,13 +87,13 @@ public class CalculatorTests
     public void MultiplyTestEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int expected = 100;
 
         // Act
-        int result = calculator.Multiply(value, value2);
+        int result = Calculator.Multiply(value, value2);
 
         // Assert
-        Assert.AreEqual(result, 100);
+        Assert.AreEqual(expected, result);
     }
 
     [DataRow(9, 11)]
@@ -104,13 +104,13 @@ public class CalculatorTests
     public void MultiplyTestNotEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int notExpected = 100;
 
         // Act
-        int result = calculator.Multiply(value, value2);
+        int result = Calculator.Multiply(value, value2);
 
         // Assert
-        Assert.AreNotEqual(result, 100);
+        Assert.AreNotEqual(notExpected, result);
     }
 
     [DataRow(200, 2)]
@@ -120,13 +120,13 @@ public class CalculatorTests
     public void DivideTestEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int expected = 100;
 
         // Act
-        int result = calculator.Divide(value, value2);
+        int result = Calculator.Divide(value, value2);
 
         // Assert
-        Assert.AreEqual(result, 100);
+        Assert.AreEqual(expected, result);
     }
 
     [DataRow(81, 9)]
@@ -138,12 +138,12 @@ public class CalculatorTests
     public void DivideTestNotEqual(int value, int value2)
     {
         // Arrange
-        var calculator = new Calculator();
+        int notExpected = 10;
 
         // Act
-        int result = calculator.Divide(value, value2);
+        int result = Calculator.Divide(value, value2);
 
         // Assert
-        Assert.AreNotEqual(result, 10);
+        Assert.AreNotEqual(notExpected, result);
     }
 }
