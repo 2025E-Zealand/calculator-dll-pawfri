@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculatorClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:CalculatorClassLibrary.Calculator.Add(System.Int32,System.Int32)">
+            <summary>
+            Add two numbers
+            </summary>
+            <param name="x">First number</param>
+            <param name="y">Second number</param>
+            <returns>Returns the sum</returns>
+        </member>
+        <member name="M:CalculatorClassLibrary.Calculator.Subtract(System.Int32,System.Int32)">
+            <summary>
+            Subtract two numbers
+            </summary>
+            <param name="x">First number</param>
+            <param name="y">Second number</param>
+            <returns>Returns the sum</returns>
+        </member>
+        <member name="M:CalculatorClassLibrary.Calculator.Multiply(System.Int32,System.Int32)">
+            <summary>
+            Multiply two numbers
+            </summary>
+            <param name="x">First number</param>
+            <param name="y">Second number</param>
+            <returns>Returns the sum</returns>
+        </member>
+        <member name="M:CalculatorClassLibrary.Calculator.Divide(System.Int32,System.Int32)">
+            <summary>
+            Divide two numbers
+            </summary>
+            <param name="x">First number</param>
+            <param name="y">Second number</param>
+            <returns>Returns the sum</returns>
+        </member>
+    </members>
+</doc>
