@@ -16,7 +16,7 @@ public class CalculatorTests
     [DataRow(5, 5)]
     [DataRow(2, 8)]
     [TestMethod]
-    public void AddTest(int value, int value2)
+    public void AddTestEqual(int value, int value2)
     {
         // Arrange
         var calculator = new Calculator();
@@ -26,6 +26,23 @@ public class CalculatorTests
 
         // Assert
         Assert.AreEqual(result, 10);
+    }
+
+    [DataRow(0, 9)]
+    [DataRow(2, 9)]
+    [DataRow(5, 6)]
+    [DataRow(0, 11)]
+    [TestMethod]
+    public void AddTestNotEqual(int value, int value2)
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act
+        int result = calculator.Add(value, value2);
+
+        // Assert
+        Assert.AreNotEqual(result, 10);
     }
 
     //[TestMethod]
