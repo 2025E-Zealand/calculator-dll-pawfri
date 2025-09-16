@@ -1,5 +1,9 @@
 ﻿namespace CalculatorClassLibrary;
 
+/// <summary>
+/// This Calculator only support integers.
+/// Static Methods for Add, Subtract, Multiply and Divide.
+/// </summary>
 public class Calculator
 {
     /// <summary>

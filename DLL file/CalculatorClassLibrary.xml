@@ -4,6 +4,12 @@
         <name>CalculatorClassLibrary</name>
     </assembly>
     <members>
+        <member name="T:CalculatorClassLibrary.Calculator">
+            <summary>
+            This Calculator only support integers.
+            Static Methods for Add, Subtract, Multiply and Divide.
+            </summary>
+        </member>
         <member name="M:CalculatorClassLibrary.Calculator.Add(System.Int32,System.Int32)">
             <summary>
             Add two numbers
